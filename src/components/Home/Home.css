@@ -1,0 +1,42 @@
+.home {
+    width: 100%; 
+    text-align: center; 
+}
+
+header {
+    width: 25%;
+    margin: 20px auto;   
+    padding: 10px; 
+    border-bottom: 1px solid black;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0; 
+}
+
+main {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 0; 
+}
+
+.home-content-block {
+    max-width: 500px; 
+}
+
+.teacher-line {
+    text-align: left;
+}
+
+ p {
+     text-align: center;
+ }
+
+  .profile-pic {
+    max-width: 50%; 
+    height: auto; 
+    margin: 0 auto; 
+ }
