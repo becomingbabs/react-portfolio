@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <nav className="navigation">
-        <div><img class="code-icon" src={CodeIcon} alt="code symbol"/></div>
+        <div><img className="code-icon" src={CodeIcon} alt="code symbol"/></div>
         <ul className="navigation-sub">
           <li>
             <Link to="/" className="item">Home</Link> 
@@ -34,7 +34,7 @@ function App() {
         </ul>
       </nav>
 
-      <main>
+      <main className="container">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
@@ -47,46 +47,46 @@ function App() {
         </Switch>
       </main>
       <footer>
-        <div>
-        <a href="mailto:bajandernoa@gmail.com" class="footer__link">bajandernoa@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" 
+        <div className="social-contact">
+        <a href="mailto:bajandernoa@gmail.com" className="footer__link">bajandernoa@gmail.com</a>
+            <ul className="social-list">
+                <li className="social-list-item">
+                    <a className="social-list-link" 
                     href="https://github.com/becomingbabs"
                     target="_blank"
                     rel="noreferrer">
-                        <i class="fab fa-github"></i>
+                        <i className="fab fa-github"></i>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" 
+                <li className="social-list-item">
+                    <a className="social-list-link"
                     href="https://www.linkedin.com/in/barbara-jandernoa/"
                     target="_blank"
                     rel="noreferrer">
-                        <i class="fab fa-linkedin"></i>
+                        <i className="fab fa-linkedin"></i>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" 
+                <li className="social-list-item">
+                    <a className="social-list-link"
                     href="https://twitter.com/babs_loves_you_"
                     target="_blank"
                     rel="noreferrer">
-                        <i class="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                     </a>
                 </li>
             </ul>
         </div>
-        <div>
+        <div className="open-source-block">
           <p>
           <a
-              href="https://github.com/becomingbabs/react-dictionary-app"
+              href="https://github.com/becomingbabs/react-portfolio"
               id="open-source-link"
               target="_blank"
               rel="noreferrer"
             >
               <strong>Open source code</strong>{" "}
             </a>
-            by Barbara <br/> 👩🏻‍💻 <br/>  Currently located in Santiago, Chile
+            <br/> 👩🏻‍💻 <br/>
           </p>
         </div>
       </footer>
